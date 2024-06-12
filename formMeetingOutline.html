@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="/form.css" >
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="form.html">Add Sacrament Meeting form</a></li>
+            <li><a href="form2.html">Add Presiding Officer form</a></li>
+            <li><a href="formMeetingOutline.html">Meeting Outline form</a></li>
+            <li><a href="formProgramOutline.html">Program Outline form</a></li>
+            <li><a href="formComeFollowMeLesson.html">Add Come Follow Me Lesson form</a></li>
+            <li><a href="formAnnouncement.html">Add Announcement form</a></li>
+            <li><a href="formWardOffName.html">Add Ward Officer Name Contact form</a></li>
+            <li><a href="formWardContactInfo.html">Add Ward Officer Name Contact Info form</a></li>
+            <li id="auth-links"></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="/post" method="post">
+            <!-- <label for="regd_no">Registration Number: </label>
+            <input type="text" id="regd_no" name="regd_no"> -->
+            <label for="branch">Meeting outline</label>
+            <select name="branch" id="branch">
+                <option value="SacramentMeeting">SacramentMeeting</option>
+                <option value="FastAndTestimonyMeeting">FastAndTestimonyMeeting</option>
+                <option value="StakeConferance">StakeConferance</option>
+                <option value="RegionalConferance">RegionalConferance</option>
+                <!-- <option value="Civil">Civil</option> -->
+            </select> 
+            <label for="date">Meeting Date: </label>
+            <input type="date" id="Date" name="Date">
+            <!-- <label for="date">Start Date: </label>
+            <input type="date" id="startDate" name="startDate">
+            <label for="date">End Date: </label>
+            <input type="date" id="endDate" name="endDate"> -->
+
+            <!-- <label for="Invocation">Invocation: </label>
+            <input type="Invocation" name="Invocation">
+
+            <label for="OpHymn">Opening Hymn#: </label>
+            <input type="OpHymn" name="OpHymn">
+            <label for="OpHymnName">Opening Hymn Name </label>
+
+            <label for="IntHymn">Intermediate Hymn#: </label>
+            <input type="IntHymn" name="IntHymn">
+            <label for="IntHymnName">Opening Hymn Name </label> -->
+
+            <label for="programOutline">programOutline: </label>
+            <!-- <input type="text" id="programOutline" name="programOutline"> -->
+            <!-- <label for="email">Email: </label>
+            <input type="email" name="email">
+            <label for="branch">Branch: </label>-->
+            
+            <select name="programOutline" id="programOutline">
+                <option value="Sp1_Sp2_IntHymn_Sp3">Sp1_Sp2_IntHymn_Sp3</option>
+                <option value="Sp1_IntHymn_Sp2">Sp1_IntHymn_Sp2</option>
+                <option value="Sp1_Sp2_Music_Sp3">Sp1_Sp2_Music_Sp3</option>
+                <option value="Sp1_Music_Sp2">Sp1_Music_Sp2</option>
+                <option value="FastAndTestimonyMeeting">FastAndTestimonyMeeting</option>
+                <option value="Other">Other</option>
+                <!-- <option value="Civil">Civil</option> -->
+            </select> 
+
+<!--             
+            <label for="CloseHymn">Closing Hymn#: </label>
+            <input type="CloseHymn" name="CloseHymn">
+            <label for="HymnName">Closing Hymn Name </label>
+
+            <label for="Benediction">Benediction: </label>
+            <input type="Benediction" name="Benediction"> -->
+
+            <button type="submit">Add Meeting</button>
+        </form>
+    </div>
+</body>
+
+</html>

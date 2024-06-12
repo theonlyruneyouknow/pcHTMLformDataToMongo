@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="/form.css" >
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="form.html">Add Sacrament Meeting form</a></li>
+            <li><a href="form2.html">Add Presiding Officer form</a></li>
+            <li><a href="formMeetingOutline.html">Meeting Outline form</a></li>
+            <li><a href="formProgramOutline.html">Program Outline form</a></li>
+            <li><a href="formComeFollowMeLesson.html">Add Come Follow Me Lesson form</a></li>
+            <li><a href="formAnnouncement.html">Add Announcement form</a></li>
+            <li><a href="formWardOffName.html">Add Ward Officer Name Contact form</a></li>
+            <li><a href="formWardContactInfo.html">Add Ward Officer Name Contact Info form</a></li>
+            <li id="auth-links"></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="/post" method="post">
+            <!-- <label for="regd_no">Registration Number: </label>
+            <input type="text" id="regd_no" name="regd_no"> -->
+            <label for="date">Start Date: </label>
+            <input type="date" id="startDate" name="startDate">
+            <label for="date">End Date: </label>
+            <input type="date" id="endDate" name="endDate">
+            <label for="announcement">Announcement: </label>
+            <textarea id="announcement" name="announcement" rows="5" cols="50">
+            </textarea>
+            <!-- <label for="email">Email: </label>
+            <input type="email" name="email">
+            <label for="branch">Branch: </label>
+            <select name="branch" id="branch">
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="Mech">Mech</option>
+                <option value="Civil">Civil</option>
+            </select> -->
+            <button type="submit">Add Lesson</button>
+        </form>
+    </div>
+</body>
+
+</html>

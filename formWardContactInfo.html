@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="form.html">Add Sacrament Meeting form</a></li>
+            <li><a href="form2.html">Add Presiding Officer form</a></li>
+            <li><a href="formMeetingOutline.html">Meeting Outline form</a></li>
+            <li><a href="formProgramOutline.html">Program Outline form</a></li>
+            <li><a href="formComeFollowMeLesson.html">Add Come Follow Me Lesson form</a></li>
+            <li><a href="formAnnouncement.html">Add Announcement form</a></li>
+            <li><a href="formWardOffName.html">Add Ward Officer Name Contact form</a></li>
+            <li><a href="formWardContactInfo.html">Add Ward Officer Name Contact Info form</a></li>
+            <li id="auth-links"></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="/post2" method="post">
+            <!-- <label for="regd_no">Registration Number: </label>
+            <input type="text" id="regd_no" name="regd_no"> -->
+            <label for="name">Ward Office: </label>
+            <select name="office1" id="office1">
+                <option value="Bishop">Bishop</option>
+                <option value="1st Councilor">1st Councilor</option>
+                <option value="2nd Counsilor">2nd Counsilor</option>
+                <option value="Excecutive Secretary">Excecutive Secretary</option>
+                <option value="Financial Clerk">"Financial Clerk</option>
+                <option value="Elders Quorum Secretary">Elders Quorum Secretary</option>
+                <option value="Relief Society President">Relief Society President</option>
+                <option value="Primary President">Primary President</option>
+                <option value="Young Womens President">Young Womens President</option>
+                <option value="Temple & Family History">Temple & Family History</option>
+                <option value="Ward Building Rep">Ward Building Rep</option>
+                <option value="Music chairman">Music chairman</option>
+                <option value="Ward Mision Leader">Ward Mision Leader</option>
+                <option value="Full-Time Missionaries">Full-Time Missionaries</option>
+                <!-- <option value="Civil">Civil</option> -->
+            </select>
+
+            <!-- <label for="phone">Phone: </label>
+            <input type="phone" name="phone">
+           <label for="type">Type: </label> -->
+            <label for="name">Officer Name: </label>
+            <!-- <input type="text" id="name" name="name"> -->
+            <select name="name" id="name">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <!-- <option value="Civil">Civil</option> -->
+            </select>
+            <label for="date">Start Date: </label>
+            <input type="date" id="startDate" name="startDate">
+            <label for="date">End Date: </label>
+            <input type="date" id="endDate" name="endDate">
+
+            <!-- <input type="text" id="name" name="name"> -->
+            <button type="submit">Send form</button>
+        </form>
+    </div>
+</body>
+
+</html>
